@@ -1,9 +1,36 @@
 console.log('Happy developing ✨')
-onclick = function(){
+id = onclick = function(){
 
-    eval(screenX)
+    eval(getElementById(addEventListener("dd")))
     element.addEventListener('click', function(event){})
+ }
+
+getElementById = function(dd){
 
 }
 
-getElementById = function(dd){}
+function appendText(){
+    document.getElementById("wing").value += "+";
+
+}
+
+function up(){
+    if(a<=0){
+        return;
+    }
+    else{
+        a--;
+        document.getElementById("wing").value -= c[a];
+    }
+
+
+    function down(){
+        if(a<= 0){
+            return;
+        }
+        else{
+            a++;
+            document.getElementById("wing").value -= c[a];
+        }
+    }
+}
