@@ -24,6 +24,7 @@ function up(){
     }
 
 
+
     function down(){
         if(a<= 0){
             return;
