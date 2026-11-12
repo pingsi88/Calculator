@@ -1,44 +1,72 @@
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<script src="index.js"></script>
-<link rel="stylesheet" href="Style.css">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
-    <input type = "text" id = "dd">
-        <input type = "text" id = "d">
-
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-        <button> + </button>
-        <button> - </button>
-        <button> * </button>
-        <button> ** </button>
-        <button> / </button>
-        <button> ( </button>
-        <button> ) </button>
-        <button> % </button>
-        <button id = "s"> --> </button>
-        <button id = "g"> <-- </button>
+<div class="split">
 
 
+    <div class="display">
+        <input type="text" id="input" placeholder="Input" autocomplete="off" />
+        <div id="output"></div>
+    </div>
 
 
-        <button> 0 </button>
-        <button> 1 </button>
-        <button> 2 </button>
-        <button> 3 </button>
-        <button> 4 </button>
-        <button> 5 </button>
-        <button> 6 </button>
-        <button> 7 </button>
-        <button> 8 </button>
-        <button> 9 </button>
+    <div class="buttons">
+        <button id="n7">7</button>
+        <button id="n8">8</button>
+        <button id="n9">9</button>
+        <button id="n4">4</button>
+        <button id="n5">5</button>
+        <button id="n6">6</button>
+        <button id="n1">1</button>
+        <button id="n2">2</button>
+        <button id="n3">3</button>
+        <button id="n0">0</button>
+        <button id="open">(</button>
+        <button id="close">)</button>
+    </div>
 
 
-        <button id = 3 onclick> = </button>
+    <div class="operations">
+        <button id="divide">/</button>
+        <button id="multiply">*</button>
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <button id="percent">%</button>
+        <button id="calc">=</button>
+    </div>
+
+
+    <div class="history-buttons">
+        <button id="prev" aria-label="Previous calculation">
+            <svg viewBox="0 0 60 50" aria-hidden="true">
+                <polygon points="30,3 57,27 42,27 42,47 18,47 18,27 3,27" />
+            </svg>
+        </button>
+        <button id="next" aria-label="Next calculation">
+            <svg viewBox="0 0 60 50" aria-hidden="true">
+                <polygon points="30,47 57,23 42,23 42,3 18,3 18,23 3,23" />
+            </svg>
+        </button>
+    </div>
+    <button id="power">**</button>
+
+</div>
 </body>
 </html>
+
